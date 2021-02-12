@@ -5,6 +5,8 @@
     <title>Rock, Paper, Scissors!</title>
     <meta charset="UTF-8" />
     <link rel='stylesheet' href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">        
 </head>
 
 <body>
@@ -13,35 +15,39 @@
     </header>
 
     <div class='choice-div'>
-        <p>Choose one of ...</p>
+        <p>The winner is first to 5 points</p>
     </div>
 
     <!-- Options buttons -->
     <div class='option-button-container'>
-        <button class='option-button' id='rock'>Rock</button>
-        <button class='option-button' id='paper'>Paper</button>
-        <button class='option-button' id='scissors'>Scissors</button>
+
+        <button class='rock-button option-button' id='rock'>
+            <img class='button-img' src='images/rock.jpg' alt='rock'>
+        </button>
+        <button class='paper-button option-button' id='paper'>
+            <img class='button-img' src='images/paper.jpg' alt='paper'>
+        </button>
+        <button class='scissors-button option-button' id='scissors'>
+            <img class='button-img' src='images/scissors.jpg' alt='scissors'>
+        </button>
+    </div>
+    <!-- Score -->
+    <div class='score-container'>
+        <div class='player-score' id='you-score'>
+            <h2>You</h2>
+            <h1 id='your-score-box'>0</h1>
+        </div>
+
+        <div class='player-score' id='computer-score'>
+            <h2>Computer</h2>
+            <h1 id='computer-score-box'>0</h1>
+        </div>
     </div>
     <!-- Results -->
     <div class='results-container'>
         <p class='results-output-box'>Place results here</p>
     </div>
-    <!-- Score -->
-    
-    <div class='score-container'>
-        <p>TOTAL SCORE:</p>
-        <div class='player-score' id='you-score'>
-            <h2>You</h2>
-            <h3 id='your-score-box'>0</h3>
-        </div>
-
-        <div class='player-score' id='computer-score'>
-            <h2>Computer</h2>
-            <h3 id='computer-score-box'>0</h3>
-        </div>
-
-
-    </div>
+    <footer>A project by Kabir Singh Dugal</footer>
 </body>
 
 <script src=script.js></script>

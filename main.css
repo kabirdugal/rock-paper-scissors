@@ -1,8 +1,30 @@
 /* GLOBAL */
 body {
     text-align: center;
-    font-family: arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
+    height:100%;
+}
+
+footer {
+    position:absolute;
+   bottom:0;
+   width:100%;
+   padding-bottom: 25px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+button:hover {
+    border: 4px solid;
 }
 
 .results {
@@ -12,6 +34,48 @@ body {
 .player-score {
     margin: 0 auto;
     display: inline-block;
+}
+
+.option-button-container {
+    margin: 70px;
+}
+
+.option-button {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    border: 5px solid black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.option-button:hover {
+    border: 10px solid;
+}
+
+.option-button:focus {
+    outline: none;
+}
+
+.option-button-end-game {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    border: 5px solid black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.option-button-end-game:focus {
+    outline: none;
+}
+
+.button-img {
+    width: 50%;
+    height: 50%;
+    padding: 30px;
 }
 
 #you-score {
